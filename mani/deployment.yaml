@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goha-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: main
+  template:
+    metadata:
+      labels:
+        app: main
+    spec:
+      containers:
+      - name: main
+        image: dllcore/kvosemtask # лучше новый уже сделать а то там старый образ но пойдет
+        ports:
+        - containerPort: 8082
+      imagePullSecrets:
+      - name: regcred
