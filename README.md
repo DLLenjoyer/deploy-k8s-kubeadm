@@ -1,3 +1,7 @@
+# инструкция 
+короче там ```kubectl apply -f deployment.yaml``` а потом ```kubectl apply -f service.yaml``` ну и все должно работать короче ps: я надеюсь образ на докерхаб у меня правильный
+
+
 # deploy-k8s-kubeadm
 Попробовать задеплоить кластер k8s на ubuntu 22.04 server с простым Hello world приложением
 1) Деплой должен осуществлятся с использованием kubeadm
